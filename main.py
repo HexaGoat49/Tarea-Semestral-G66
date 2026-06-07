@@ -59,24 +59,6 @@ for i in range(num_salas):
     
 ### ALGORITMO ###
 
-# Esta funcion recive una lista de lista y devuelve la lista ordenada segun un indice
-def ordenar(lista, index):
-    
-    L = []
-    for e in lista:
-        L.append(e[index])
-    L.sort()
-    
-    out = []
-    copy = lista
-    for i in L:
-        for e in copy:
-            if e[index] == i:
-                copy.remove(e)
-                out.append(e)
-    
-    return out
-            
 # Esta funcion devuelve la lista de todos las salas que cumplen con la condicion de alumno y la de requisitos
 def posibles(curso):
     
